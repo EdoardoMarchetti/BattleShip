@@ -6,26 +6,10 @@
     tools:context = ".View.HudActivity"
     >
 
-    <!--Badge-->
-    <RelativeLayout
-        android:id="@+id/badge_and_name_view"
+    <include
+        layout="@layout/hud_hedear"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        >
-        <ImageView
-            android:id="@+id/badge"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="@color/colorPrimaryDark"/>
-        <TextView
-            android:id="@+id/player_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:text="PlayerName"/>
-    </RelativeLayout>
+        android:layout_height="100dp"/>
 
     <FrameLayout
         android:id="@+id/anchor_point"
