@@ -4,39 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FleetMenuActivity">
+    tools:context="com.edomar.battleship.View.FleetFragment">
 
-    <!-- Hud common for all menu's activity -->
-    <include
-        android:id="@+id/hud_layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        layout="@layout/hud">
-    </include>
 
-    <!-- Save button -->
-
-    <!-- Temporary -->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="100dp">
-
+        >
+        <!-- Save button -->
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/grid"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             android:onClick="saveFleet"
-            android:text="@string/saveFleet" />
+            android:text="@string/saveFleet"
+            android:background="@color/colorAccent"/>
 
+
+        <!-- Temporary -->
         <ImageView
             android:id="@+id/grid"
             android:layout_width="300dp"
             android:layout_height="300dp"
-            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorAccent"
             />
     </RelativeLayout>
 

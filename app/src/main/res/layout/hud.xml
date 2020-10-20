@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context = ".View.HudActivity"
     >
 
     <!--Badge-->
@@ -10,6 +11,7 @@
         android:id="@+id/badge_and_name_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         >
         <ImageView
             android:id="@+id/badge"
@@ -25,13 +27,21 @@
             android:text="PlayerName"/>
     </RelativeLayout>
 
+    <FrameLayout
+        android:id="@+id/anchor_point"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"/>
+
     <!--Buttons Menu-->
     <LinearLayout
         android:id="@+id/buttons_menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
         >
 
         <RelativeLayout
@@ -41,7 +51,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@color/colorPrimaryDark"
-            android:onClick="changeActivity">
+            android:onClick="showFragment">
 
             <ImageView
                 android:id="@+id/left_image"
@@ -66,7 +76,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@color/colorPrimary"
-            android:onClick="changeActivity">
+            android:onClick="showFragment">
 
             <ImageView
                 android:id="@+id/central_image"
@@ -91,7 +101,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@color/colorAccent"
-            android:onClick="changeActivity">
+            android:onClick="showFragment">
 
             <ImageView
                 android:id="@+id/right_image"
@@ -112,4 +122,4 @@
 
 
 
-</FrameLayout>
+</RelativeLayout>

@@ -4,21 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SettingsMenuActivity">
+    tools:context="com.edomar.battleship.View.SettingsFragment">
 
-    <!-- Hud common for all menu's activity -->
-    <include
-        android:id="@+id/hud_layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        layout="@layout/hud">
-    </include>
+
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="100dp"
-        android:layout_marginTop="100dp"
         >
 
         <androidx.appcompat.widget.SwitchCompat
@@ -26,7 +18,7 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="80dp"
             android:text="@string/Sound"
             android:textSize="20sp"
              />
