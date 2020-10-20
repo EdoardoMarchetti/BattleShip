@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    >
+
+    <Button
+        android:id="@+id/russian_button"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:text="russian"
+        android:layout_above="@+id/classic_button"
+        />
+
+    <Button
+        android:id="@+id/classic_button"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:text="classic"/>
+
+    <Button
+        android:id="@+id/standard_button"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:text="standard"
+        android:layout_below="@+id/classic_button"/>
+</RelativeLayout>
