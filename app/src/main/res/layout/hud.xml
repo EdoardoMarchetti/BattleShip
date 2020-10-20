@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <!--Badge-->
+    <RelativeLayout
+        android:id="@+id/badge_and_name_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/badge"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/colorPrimaryDark"/>
+        <TextView
+            android:id="@+id/player_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="PlayerName"/>
+    </RelativeLayout>
+
+    <!--Buttons Menu-->
+    <LinearLayout
+        android:id="@+id/buttons_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        >
+
+        <RelativeLayout
+            android:id="@+id/left_button"
+            android:layout_weight="1"
+            android:layout_gravity="bottom|left"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="changeActivity">
+
+            <ImageView
+                android:id="@+id/left_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/menu"/>
+
+            <TextView
+                android:id="@+id/left_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/left_image"
+                android:layout_centerHorizontal="true"
+                android:text="Settings" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/central_button"
+            android:layout_weight="2"
+            android:layout_gravity="bottom|left"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/colorPrimary"
+            android:onClick="changeActivity">
+
+            <ImageView
+                android:id="@+id/central_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/helm"/>
+
+            <TextView
+                android:id="@+id/central_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MainMenu"
+                android:layout_below="@+id/central_image"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/right_button"
+            android:layout_weight="1"
+            android:layout_gravity="bottom|left"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/colorAccent"
+            android:onClick="changeActivity">
+
+            <ImageView
+                android:id="@+id/right_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/captain"/>
+
+            <TextView
+                android:id="@+id/right_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fleet"
+                android:layout_below="@+id/right_image"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</FrameLayout>

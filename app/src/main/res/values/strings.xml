@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">BattleShip</string>
+    <string name="saveFleet">SAVE FLEET</string>
+    <string name="Sound">Sound</string>
 </resources>
