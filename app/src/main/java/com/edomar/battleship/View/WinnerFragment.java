@@ -55,8 +55,9 @@ public class WinnerFragment extends Fragment implements View.OnTouchListener{
     @Override
     public boolean onTouch(View view, MotionEvent motionEvent) {
         Log.d(TAG, "onTouch: ");
-        Intent intent = new Intent(getContext(), HudActivity.class);
-        startActivity(intent);
+        /*Intent intent = new Intent(getContext(), HudActivity.class);
+        startActivity(intent);*/
+        getActivity().finish();
         return true;
     }
 }
