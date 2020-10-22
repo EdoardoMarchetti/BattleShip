@@ -1,7 +1,6 @@
-package com.edomar.battleship.View;
+package com.edomar.battleship.View.gameplayFragments;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -11,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.edomar.battleship.R;
+import com.edomar.battleship.View.menuFragments.FleetFragment;
+import com.edomar.battleship.View.SinglePlayerGame;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -55,8 +56,7 @@ public class WinnerFragment extends Fragment implements View.OnTouchListener{
     @Override
     public boolean onTouch(View view, MotionEvent motionEvent) {
         Log.d(TAG, "onTouch: ");
-        /*Intent intent = new Intent(getContext(), HudActivity.class);
-        startActivity(intent);*/
+
         getActivity().finish();
         return true;
     }

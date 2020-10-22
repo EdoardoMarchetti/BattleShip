@@ -8,6 +8,9 @@ import android.util.Log;
 import android.view.View;
 
 import com.edomar.battleship.R;
+import com.edomar.battleship.View.menuFragments.FleetFragment;
+import com.edomar.battleship.View.menuFragments.MainMenuFragment;
+import com.edomar.battleship.View.menuFragments.SettingsFragment;
 
 public class HudActivity extends AppCompatActivity {
 

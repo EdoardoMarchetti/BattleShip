@@ -1,4 +1,4 @@
-package com.edomar.battleship.View;
+package com.edomar.battleship.View.gameplayFragments;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.edomar.battleship.R;
+import com.edomar.battleship.View.SinglePlayerGame;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
